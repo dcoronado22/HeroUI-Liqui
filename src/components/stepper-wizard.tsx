@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Progress, Input, Divider, Checkbox } from "@heroui/react";
+import { Button, Card, Input, Divider, Checkbox } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { FileUploadCard } from "./file-upload-card";
 import { NavigationDrawer } from "./navigation-drawer";

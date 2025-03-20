@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Card, Button, Badge, Modal, ModalContent, ModalHeader, ModalBody, ModalFooter } from "@heroui/react";
 import { Icon } from "@iconify/react";
-import { HeartIcon, ViewIcon } from "lucide-react";
-import { Document, Page, pdfjs } from 'react-pdf';
+import { ViewIcon } from "lucide-react";
+import { Document, pdfjs } from 'react-pdf';
 
 interface FileCardProps {
     name: string;
@@ -11,9 +11,9 @@ interface FileCardProps {
     progress?: number;
 }
 
-export function FileUploadCard({ name, size, status, progress }: FileCardProps) {
+export function FileUploadCard({ name, size, status }: FileCardProps) {
     const [isPdfPreviewOpen, setIsPdfPreviewOpen] = useState(false);
-    const [numPages, setNumPages] = useState<number | null>(null);
+    const [numPages] = useState<number | null>(null);
     const [pageNumber, setPageNumber] = useState(1);
 
     pdfjs.GlobalWorkerOptions.workerSrc = new URL(

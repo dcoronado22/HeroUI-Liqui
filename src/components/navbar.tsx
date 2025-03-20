@@ -1,6 +1,4 @@
-import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, Avatar } from "@heroui/react";
-import { Icon } from "@iconify/react";
 import { ThemeSwitcher } from "./theme-switcher";
 
 export function AppNavbar() {
