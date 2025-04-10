@@ -1,8 +1,8 @@
-import type { ButtonProps, ComponentProps } from "@heroui/react";
+import type { ButtonProps } from "@heroui/react";
 
 import { cn } from "@heroui/react";
 import { domAnimation, LazyMotion, m } from "framer-motion";
-import React from "react";
+import React, { ComponentProps } from "react";
 
 export type VerticalStepProps = {
   className?: string;

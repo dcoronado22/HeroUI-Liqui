@@ -2,7 +2,6 @@ import type { FileInfo, FileStatus } from "../../types/form-types";
 
 import { Badge, Button, Card, CardBody, CardFooter, CardHeader } from "@heroui/react";
 import { Icon } from "@iconify/react";
-import React from "react";
 
 interface DocumentCardProps {
     file: FileInfo;

@@ -12,7 +12,6 @@ import {
 } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { useTheme } from "@heroui/use-theme";
-import React from "react";
 
 import NotificationsMenu from "./notifications-menu";
 
@@ -23,7 +22,7 @@ interface HeaderProps {
   onMobileMenuToggle: () => void;
 }
 
-export function Header({ currentStep, isMobileMenuOpen, onMobileMenuToggle, totalSteps }: HeaderProps) {
+export function Header({ currentStep, totalSteps }: HeaderProps) {
   const { theme, setTheme } = useTheme();
   const isDark = theme === "dark";
 

@@ -1,7 +1,6 @@
 import type { FormData } from "../../types/form-types";
 
 import { Checkbox, Input } from "@heroui/react";
-import React from "react";
 
 interface CompanyDetailsProps {
     data: FormData;

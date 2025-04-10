@@ -1,5 +1,4 @@
-import {Icon} from "@iconify/react";
-import React from "react";
+import { Icon } from "@iconify/react";
 
 interface StepDescriptionProps {
   title: string;
@@ -7,7 +6,7 @@ interface StepDescriptionProps {
   icon: string;
 }
 
-export function StepDescription({description, icon, title}: StepDescriptionProps) {
+export function StepDescription({ description, icon, title }: StepDescriptionProps) {
   return (
     <div className="mt-8 space-y-4 border-t-small border-divider pt-6">
       <div className="flex items-center gap-3">

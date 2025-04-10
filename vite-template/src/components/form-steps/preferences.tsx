@@ -1,7 +1,6 @@
-import type {FormData} from "../../types/form-types";
+import type { FormData } from "../../types/form-types";
 
-import {Checkbox, Select, SelectItem} from "@heroui/react";
-import React from "react";
+import { Checkbox, Select, SelectItem } from "@heroui/react";
 
 interface PreferencesProps {
   data: FormData;
@@ -10,7 +9,7 @@ interface PreferencesProps {
 
 const occupations = ["Student", "Employed", "Self-Employed", "Unemployed", "Retired"];
 
-export function Preferences({data, onChange}: PreferencesProps) {
+export function Preferences({ data, onChange }: PreferencesProps) {
   return (
     <div className="flex flex-col gap-6">
       <div className="space-y-2">
@@ -24,7 +23,7 @@ export function Preferences({data, onChange}: PreferencesProps) {
         onChange={(e) => onChange("occupation", e.target.value)}
       >
         {occupations.map((occupation) => (
-          <SelectItem key={occupation} value={occupation}>
+          <SelectItem key={occupation} >
             {occupation}
           </SelectItem>
         ))}

@@ -1,4 +1,4 @@
-import { CircularProgress, Image } from "@heroui/react";
+import { Image } from "@heroui/react";
 
 interface LoadingOverlayProps {
     isOpen: boolean;

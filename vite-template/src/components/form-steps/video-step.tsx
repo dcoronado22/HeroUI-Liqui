@@ -1,6 +1,5 @@
 import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
-import React from "react";
 
 export function VideoStep() {
     return (

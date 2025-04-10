@@ -1,14 +1,12 @@
-import type {FormData} from "../../types/form-types";
+import type { FormData } from "../../types/form-types";
 
-import {Input} from "@heroui/react";
-import React from "react";
-
+import { Input } from "@heroui/react";
 interface ContactInformationProps {
   data: FormData;
   onChange: (key: keyof FormData, value: string) => void;
 }
 
-export function ContactInformation({data, onChange}: ContactInformationProps) {
+export function ContactInformation({ data, onChange }: ContactInformationProps) {
   return (
     <div className="flex flex-col gap-6">
       <div className="space-y-2">

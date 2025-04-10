@@ -1,6 +1,6 @@
 import type { FormData } from "@/types/form-types";
 
-import { Badge, Progress, Image } from "@heroui/react";
+import { Progress, Image } from "@heroui/react";
 import React from "react";
 
 import { CompanyDetails } from "@/components/form-steps/company-details";
@@ -22,6 +22,11 @@ const INITIAL_FORM_DATA: FormData = {
     secondLastName: "",
     privacyAccepted: false,
     documents: [],
+    address: "",
+    dateOfBirth: "",
+    email: "",
+    newsletter: true,
+    occupation: ""
 };
 
 const STEPS = [
@@ -135,13 +140,13 @@ function App() {
                     />
                     {/* Mobile Step Badge */}
                     <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 lg:hidden">
-                        <Badge
+                        {/* <Badge
                             className="h-6 min-w-unit-16 px-unit-4"
                             color="primary"
                             content={`${currentStep + 1} / ${STEPS.length}`}
                             size="lg"
                             variant="solid"
-                        />
+                        /> */}
                     </div>
                 </div>
 

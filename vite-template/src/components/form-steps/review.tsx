@@ -1,14 +1,13 @@
-import type {FormData} from "../../types/form-types";
+import type { FormData } from "../../types/form-types";
 
-import {Divider} from "@heroui/react";
-import {useDateFormatter} from "@react-aria/i18n";
-import React from "react";
+import { Divider } from "@heroui/react";
+import { useDateFormatter } from "@react-aria/i18n";
 
 interface ReviewProps {
   data: FormData;
 }
 
-export function Review({data}: ReviewProps) {
+export function Review({ data }: ReviewProps) {
   const dateFormatter = useDateFormatter({
     dateStyle: "long",
   });
@@ -24,7 +23,7 @@ export function Review({data}: ReviewProps) {
     title,
   }: {
     title: string;
-    items: {label: string; value: string}[];
+    items: { label: string; value: string }[];
   }) => (
     <div className="space-y-3">
       <h3 className="text-large font-medium">{title}</h3>
@@ -51,9 +50,9 @@ export function Review({data}: ReviewProps) {
       <InfoSection
         title="Personal Details"
         items={[
-          {label: "First Name", value: data.firstName || "--"},
-          {label: "Last Name", value: data.lastName || "--"},
-          {label: "Date of Birth", value: formatDate(data.dateOfBirth)},
+          { label: "First Name", value: data.firstName || "--" },
+          { label: "Last Name", value: data.lastName || "--" },
+          { label: "Date of Birth", value: formatDate(data.dateOfBirth) },
         ]}
       />
 
@@ -62,9 +61,9 @@ export function Review({data}: ReviewProps) {
       <InfoSection
         title="Contact Information"
         items={[
-          {label: "Email", value: data.email || "--"},
-          {label: "Phone", value: data.phone || "--"},
-          {label: "Address", value: data.address || "--"},
+          { label: "Email", value: data.email || "--" },
+          { label: "Phone", value: data.phone || "--" },
+          { label: "Address", value: data.address || "--" },
         ]}
       />
 
@@ -73,8 +72,8 @@ export function Review({data}: ReviewProps) {
       <InfoSection
         title="Preferences"
         items={[
-          {label: "Occupation", value: data.occupation || "--"},
-          {label: "Newsletter", value: data.newsletter ? "Yes" : "No"},
+          { label: "Occupation", value: data.occupation || "--" },
+          { label: "Newsletter", value: data.newsletter ? "Yes" : "No" },
         ]}
       />
     </div>

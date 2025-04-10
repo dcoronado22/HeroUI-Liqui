@@ -1,12 +1,11 @@
-import {Progress} from "@heroui/react";
-import React from "react";
+import { Progress } from "@heroui/react";
 
 interface ProgressIndicatorProps {
   currentStep: number;
   totalSteps: number;
 }
 
-export function ProgressIndicator({currentStep, totalSteps}: ProgressIndicatorProps) {
+export function ProgressIndicator({ currentStep, totalSteps }: ProgressIndicatorProps) {
   const progress = (currentStep / totalSteps) * 100;
 
   return (

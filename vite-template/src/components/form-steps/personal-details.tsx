@@ -1,15 +1,14 @@
-import type {FormData} from "../../types/form-types";
+import type { FormData } from "../../types/form-types";
 
-import {DatePicker, Input} from "@heroui/react";
-import {CalendarDate} from "@internationalized/date";
-import React from "react";
+import { DatePicker, Input } from "@heroui/react";
+import { CalendarDate } from "@internationalized/date";
 
 interface PersonalDetailsProps {
   data: FormData;
   onChange: (key: keyof FormData, value: any) => void;
 }
 
-export function PersonalDetails({data, onChange}: PersonalDetailsProps) {
+export function PersonalDetails({ data, onChange }: PersonalDetailsProps) {
   return (
     <div className="flex flex-col gap-6">
       <div className="space-y-2">
@@ -49,7 +48,7 @@ export function PersonalDetails({data, onChange}: PersonalDetailsProps) {
           isRequired
           className="w-full"
           label="Date of Birth"
-          placeholder="Select your date of birth"
+          // placeholder="Select your date of birth"
           radius="sm"
           value={data.dateOfBirth}
           variant="flat"
@@ -58,11 +57,11 @@ export function PersonalDetails({data, onChange}: PersonalDetailsProps) {
             input: "bg-default-100",
             inputWrapper: "bg-default-100 w-full",
           }}
-          formatOptions={{
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          }}
+          // formatOptions={{
+          //   day: "numeric",
+          //   month: "long",
+          //   year: "numeric",
+          // }}
           maxValue={
             new CalendarDate(
               new Date().getFullYear() - 18,
