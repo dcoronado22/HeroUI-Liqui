@@ -1,5 +1,7 @@
+import VinculacionPage from "./VinculacionPage";
+
 export default function IndexPage() {
   return (
-    <div>test</div>
+    <VinculacionPage />
   );
 }
